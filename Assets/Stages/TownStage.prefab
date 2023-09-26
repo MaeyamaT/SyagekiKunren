@@ -175,7 +175,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977081216097370913}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: e69f6c0159177144a92cee3aeb10584b, type: 3}
   m_Animations:
@@ -275,7 +275,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066970419879829143}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 246e55031d1207e44a20501691e811f6, type: 3}
   m_Animations:
@@ -459,7 +459,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2199298111342785873}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 1bdc5a3250b036b43ab846c4b8d26358, type: 3}
   m_Animations:
@@ -690,7 +690,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3391356966839504315}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 5403939657f9c4344aa18cf515342734, type: 3}
   m_Animations:
@@ -790,7 +790,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3481045913514936096}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 246e55031d1207e44a20501691e811f6, type: 3}
   m_Animations:
@@ -1067,7 +1067,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4017857728563069611}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 246e55031d1207e44a20501691e811f6, type: 3}
   m_Animations:
@@ -1168,7 +1168,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4515137094147219403}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 526b8341fc722fc45852a2c197c1118d, type: 3}
   m_Animations:
@@ -1268,7 +1268,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5384692380973651804}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 785aa00fbd71627418b6de3e5d8b0914, type: 3}
   m_Animations:
@@ -1368,7 +1368,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5459104167293045623}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 1c366a597c3385a46a08ecccb24c45b6, type: 3}
   m_Animations:
@@ -1468,7 +1468,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7519844340965008789}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 4299129368205833123, guid: 1c366a597c3385a46a08ecccb24c45b6, type: 3}
   m_Animations:
