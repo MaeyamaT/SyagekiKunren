@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
     Vector3 lastMousePosition;
     Vector3 angle = new Vector3(0, 0, 0);
-    public float mouseSensitivity;
+    public float mouseSensitivity = 1;
 
     void Start()
     {
@@ -16,9 +17,19 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        angle.y += (Input.mousePosition.x - lastMousePosition.x)*mouseSensitivity;
-        angle.x -= (Input.mousePosition.y - lastMousePosition.y)*mouseSensitivity;
+        angle.y += (Input.mousePosition.x - lastMousePosition.x) * mouseSensitivity;
+        angle.x -= (Input.mousePosition.y - lastMousePosition.y) * mouseSensitivity;
         this.gameObject.transform.localEulerAngles = angle;
         lastMousePosition = Input.mousePosition;
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100f))
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        }
     }
 }
