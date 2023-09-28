@@ -1,26 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    Vector3 lastMousePosition;
-    Vector3 angle = new Vector3(0, 0, 0);
-    public float mouseSensitivity = 1;
-
+    Vector3 angle;
+    Vector3 primaryAngle;
+    float yLimit = 40f;
+    float xLimit = 25f;
+    public float sensitivity = 1;
     void Start()
     {
-        angle = this.transform.localEulerAngles;
-        lastMousePosition = Input.mousePosition;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        angle = this.gameObject.transform.localEulerAngles;
+        primaryAngle = this.gameObject.transform.localEulerAngles;
     }
-
     void Update()
     {
-        angle.y += (Input.mousePosition.x - lastMousePosition.x) * mouseSensitivity;
-        angle.x -= (Input.mousePosition.y - lastMousePosition.y) * mouseSensitivity;
+        angle.y += Input.GetAxis("Mouse X") * sensitivity;
+
+        if (angle.y <= primaryAngle.y - yLimit)
+        {
+            angle.y = primaryAngle.y - yLimit;
+        }
+        if (angle.y >= primaryAngle.y + yLimit)
+        {
+            angle.y = primaryAngle.y + yLimit;
+        }
+
+        angle.x -= Input.GetAxis("Mouse Y") * sensitivity;
+
+        if (angle.x <= primaryAngle.x - xLimit)
+        {
+            angle.x = primaryAngle.x - xLimit;
+        }
+        if (angle.x >= primaryAngle.x + xLimit)
+        {
+            angle.x = primaryAngle.x + xLimit;
+        }
+
         this.gameObject.transform.localEulerAngles = angle;
-        lastMousePosition = Input.mousePosition;
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
