@@ -5,12 +5,13 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class CameraController : MonoBehaviour
 {
-    int score=0;
+    public int score=0;
     Vector3 angle;
     Vector3 primaryAngle;
     float yLimit = 40f;
     float xLimit = 25f;
     public float sensitivity = 1;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
