@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class CameraController : MonoBehaviour
 {
+    int score=0;
     Vector3 angle;
     Vector3 primaryAngle;
     float yLimit = 40f;
@@ -50,6 +52,8 @@ public class CameraController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100f))
             {
                 Destroy(hit.collider.gameObject);
+                score++;
+                Debug.Log(score);
             }
         }
     }
