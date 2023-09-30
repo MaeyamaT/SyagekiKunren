@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1983585633442753858}
   - component: {fileID: 239828647475962511}
   - component: {fileID: 2300761077069232642}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4366661733461993997}
   - component: {fileID: 5056550340402327626}
   - component: {fileID: 9004114218080660543}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 6715377637718990964}
   - component: {fileID: 7320988018251433820}
   - component: {fileID: 5534077814026699612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saloon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,90 +284,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &1356399846364764873
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1356399846364764876}
-  - component: {fileID: 1356399846364764875}
-  - component: {fileID: 1356399846364764874}
-  m_Layer: 0
-  m_Name: TownCheckCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1356399846364764876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356399846364764873}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 3.6, z: 16.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4608940593330386883}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!20 &1356399846364764875
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356399846364764873}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!81 &1356399846364764874
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356399846364764873}
-  m_Enabled: 1
 --- !u!1 &2199298111342785873
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +296,7 @@ GameObject:
   - component: {fileID: 6309668084883593837}
   - component: {fileID: 2049504727510507598}
   - component: {fileID: 6025680647915476017}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Reservoir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +396,7 @@ GameObject:
   - component: {fileID: 7671433444075137119}
   - component: {fileID: 7160324466089720408}
   - component: {fileID: 852920334591355889}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5447898112170236316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saloons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +527,7 @@ GameObject:
   - component: {fileID: 4877495921790458792}
   - component: {fileID: 1501669875000069971}
   - component: {fileID: 3104527217883635933}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +627,7 @@ GameObject:
   - component: {fileID: 162504120587266063}
   - component: {fileID: 1076763473752094173}
   - component: {fileID: 5160664163343319256}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saloon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +726,7 @@ GameObject:
   - component: {fileID: 1282221880101525330}
   - component: {fileID: 3977956464298943303}
   - component: {fileID: 3321566141865715034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4154075400818748767}
   - component: {fileID: 3058179693861677506}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +904,7 @@ GameObject:
   - component: {fileID: 6044997330783342340}
   - component: {fileID: 1664159622450465931}
   - component: {fileID: 2045443770099303072}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +1004,7 @@ GameObject:
   - component: {fileID: 1382013271899749140}
   - component: {fileID: 4665953136282598106}
   - component: {fileID: 7001800691073576521}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Windmill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1105,7 @@ GameObject:
   - component: {fileID: 7970516696396495310}
   - component: {fileID: 1879876651260853652}
   - component: {fileID: 6718605961585114148}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: House_Standard_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1205,7 @@ GameObject:
   - component: {fileID: 4180111556100290902}
   - component: {fileID: 8539291597838003759}
   - component: {fileID: 6535397746439524628}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: House_Standard_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1305,7 @@ GameObject:
   - component: {fileID: 4940567214333776316}
   - component: {fileID: 240866330965354896}
   - component: {fileID: 9217083450024027554}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: House_Standard_03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1486,7 +1402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4608940593330386883}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TownStage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1431,6 @@ Transform:
   - {fileID: 4154075400818748767}
   - {fileID: 6843145457913331822}
   - {fileID: 914432343098691292}
-  - {fileID: 1356399846364764876}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
