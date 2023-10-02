@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     float yLimit = 40f;
     float xLimit = 25f;
     public float sensitivity = 1;
+    AudioSource audioSource;
 
     void Start()
     {
@@ -47,6 +48,7 @@ public class CameraController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            GetComponent<AudioSource>().Play();;
             Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
             RaycastHit hit;
 

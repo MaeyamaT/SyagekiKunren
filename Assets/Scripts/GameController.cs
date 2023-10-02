@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public CameraController cc;
-    public float totalTime=10;
+    public float totalTime=60.0f;
     public GameObject resultText;
     public Text scoreText;
     public int score=0;
