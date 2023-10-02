@@ -5,7 +5,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class CameraController : MonoBehaviour
 {
-    public int score=0;
+    public GameController gc;
     Vector3 angle;
     Vector3 primaryAngle;
     float yLimit = 40f;
@@ -53,8 +53,8 @@ public class CameraController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100f))
             {
                 Destroy(hit.collider.gameObject);
-                score++;
-                Debug.Log(score);
+                gc.score++;
+                Debug.Log(gc.score);
             }
         }
     }
