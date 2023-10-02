@@ -12,7 +12,7 @@ public class SceneChangeOption : MonoBehaviour
         if (o.activeSelf)
         {
             o.SetActive(false);
-        }else{
+        }else {
             o.SetActive(true);
         }
 
