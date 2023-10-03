@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9058824, g: 0.7137255, b: 0.37647063, a: 1}
+  m_Color: {r: 0.9433962, g: 0.7426304, b: 0.3960484, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -900,6 +900,8 @@ GameObject:
   - component: {fileID: 1494742724}
   - component: {fileID: 1494742723}
   - component: {fileID: 1494742722}
+  - component: {fileID: 1494742725}
+  - component: {fileID: 1494742726}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -973,6 +975,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494742725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494742721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456dbd9ec91d30744a81c30ce20f52eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  o: {fileID: 1581498226}
+--- !u!114 &1494742726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494742721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a1ac53a5323544caed0a8fae3268e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  o: {fileID: 1581498226}
 --- !u!224 &1520422343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6079977887440007828, guid: 0a3665c098dae594cb5c054bd4a4a124, type: 3}
@@ -1678,7 +1706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321162978173392, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204321162978173392, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

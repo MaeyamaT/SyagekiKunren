@@ -5,12 +5,13 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class CameraController : MonoBehaviour
 {
-    public int score=0;
+    public GameController gc;
     Vector3 angle;
     Vector3 primaryAngle;
     float yLimit = 40f;
     float xLimit = 25f;
     public float sensitivity = 1;
+    AudioSource audioSource;
 
     void Start()
     {
@@ -47,14 +48,15 @@ public class CameraController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            GetComponent<AudioSource>().Play();;
             Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, 100f))
             {
                 Destroy(hit.collider.gameObject);
-                score++;
-                Debug.Log(score);
+                gc.score++;
+                Debug.Log(gc.score);
             }
         }
     }

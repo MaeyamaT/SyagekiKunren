@@ -7,18 +7,19 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public CameraController cc;
-    float totalTime=10;
+    public float totalTime=60.0f;
     public GameObject resultText;
     public Text scoreText;
+    public int score=0;
 
     void Start()
     {
-        resultText.SetActive(false);
+
     }
 
     void Update()
     {
-        scoreText.text = "SCORE:"+cc.score.ToString();
+        scoreText.text = "SCORE:"+score.ToString();
         totalTime-=Time.deltaTime;
         if(totalTime < 0)
         {
