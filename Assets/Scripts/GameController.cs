@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public CameraController cc;
+    public GameState gs;
     public float totalTime=60.0f;
     public GameObject resultText;
     public Text scoreText;
@@ -28,6 +29,7 @@ public class GameController : MonoBehaviour
         if(totalTime == 0)
         {
             resultText.SetActive(true);
+            gs.cross.SetActive(false);
             cc.GetComponent<CameraController>().enabled = false;
             Invoke("ChangeScene", 5.0f);
         }
