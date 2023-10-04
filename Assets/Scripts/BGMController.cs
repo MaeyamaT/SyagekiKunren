@@ -7,7 +7,7 @@ public class BGMController : MonoBehaviour
 {
     public GameController gc;
     AudioSource audioSource;
-    public AudioClip[] clips;// Start is called before the first frame update
+    public AudioClip[] clips;
     bool isChenged=false;
     void Start()
     {
