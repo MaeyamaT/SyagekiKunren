@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.16420089, g: 0.426082, b: 0.68541443, a: 1}
   m_IndirectSpecularColor: {r: 0.11265575, g: 0.28144044, b: 0.70868313, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -267,7 +266,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50980718
 GameObject:
@@ -900,9 +899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stages:
-  - {fileID: 2332133843376961274, guid: ca60205d8e038774b8cb569fe9d80d26, type: 3}
-  - {fileID: 7164251774275315911, guid: 66525eabc22433f418d941fb8af6d7b3, type: 3}
-  - {fileID: 4252737331206850545, guid: 0220a11a81b5c2c49a505f28155148eb, type: 3}
+  - {fileID: 1275586677740248182, guid: ca60205d8e038774b8cb569fe9d80d26, type: 3}
+  - {fileID: 3884961022130580605, guid: 66525eabc22433f418d941fb8af6d7b3, type: 3}
+  - {fileID: 4580175397470431590, guid: 0220a11a81b5c2c49a505f28155148eb, type: 3}
 --- !u!4 &632474272
 Transform:
   m_ObjectHideFlags: 0
@@ -1432,7 +1431,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -1534,7 +1533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456dbd9ec91d30744a81c30ce20f52eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  o: {fileID: 531675778}
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2482,5 +2480,5 @@ Transform:
   - {fileID: 1527367671}
   - {fileID: 859166455}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
