@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9058824, g: 0.7137255, b: 0.37647063, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -845,6 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m: {fileID: 527197858}
+  audioSource: {fileID: 527197860}
 --- !u!1 &727595914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1002,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2129,7 +2130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321162978173393, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204321163047945505, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_Sprite
@@ -2213,7 +2214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164004384610, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164004384610, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2269,7 +2270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2277,7 +2278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3662598921457475505, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}

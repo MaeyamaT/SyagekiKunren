@@ -5,20 +5,15 @@ using UnityEngine;
 public class MuteSounds : MonoBehaviour
 {
     public GameObject m;
-    public void Start()
+    public AudioSource audioSource;
+    
+      void Start()
     {
-
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
      void OnClickStartButton()
     {
-        if (m.activeSelf)
-        {
-            m.SetActive(false);
-        }
-        else
-        {
-            m.SetActive(true);
-        }
+        audioSource.volume = 0;
     }
 }
