@@ -15,6 +15,7 @@ public class GameState : MonoBehaviour
     bool flag = false;
     public GameObject timer;
     public GameObject stt;
+    public GameObject cross;
     public Text startTimer;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class GameState : MonoBehaviour
     {
         timer.SetActive(true);
         stt.SetActive(false);
+        cross.SetActive(true);
         cameraCon.GetComponent<CameraController>().enabled = true;
         gameCon.GetComponent<GameController>().enabled = true;
         targetGen.GetComponent<TargetGenerator>().enabled = true;
