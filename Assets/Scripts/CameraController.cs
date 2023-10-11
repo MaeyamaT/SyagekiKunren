@@ -13,15 +13,26 @@ public class CameraController : MonoBehaviour
     public float sensitivity = 1;
     AudioSource audioSource;
 
+    //設定画面をアタッチする為のGamaObject
+    public GameObject o;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         angle = this.gameObject.transform.localEulerAngles;
         primaryAngle = this.gameObject.transform.localEulerAngles;
+          
     }
     void Update()
     {
+          //設定画面がActiveの時にカーソルロックをオフにしてマウスポインタを映す処理
+          if(o.activeSelf)
+          {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+          }
+
         angle.y += Input.GetAxis("Mouse X") * sensitivity;
 
         if (angle.y <= primaryAngle.y - yLimit)

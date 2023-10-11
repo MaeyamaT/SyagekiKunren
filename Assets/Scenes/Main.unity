@@ -1148,7 +1148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456dbd9ec91d30744a81c30ce20f52eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  o: {fileID: 531675778}
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gc: {fileID: 676794271}
   sensitivity: 1
+  o: {fileID: 531675778}
 --- !u!82 &963194233
 AudioSource:
   m_ObjectHideFlags: 0
