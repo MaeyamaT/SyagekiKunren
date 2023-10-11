@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cdb06ecb547b54a8b02e0b81a9317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m: {fileID: 527197858}
+  muteButton: {fileID: 0}
   audioSource: {fileID: 527197860}
 --- !u!1 &727595914
 GameObject:
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494742721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3a1ac53a5323544caed0a8fae3268e2, type: 3}
   m_Name: 

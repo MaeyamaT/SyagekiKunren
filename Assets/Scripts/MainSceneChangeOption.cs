@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainSceneChangeOption : MonoBehaviour
 {
     public GameObject option;
+    public GameObject cross;
     public CameraController camController;
     public void OptionUI()
     {
@@ -14,6 +15,8 @@ public class MainSceneChangeOption : MonoBehaviour
             camController.GetComponent<CameraController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            cross.SetActive(true);
+
         }else {
             option.SetActive(true);
         }

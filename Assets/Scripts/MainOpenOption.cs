@@ -6,6 +6,7 @@ public class MainOpenOption : MonoBehaviour
 {
     public GameObject option;
     public CameraController camCon;
+    public GameObject cross;
     // Update is called once per frame
     public void Update(){
         if(Input.GetKeyDown(KeyCode.O))
@@ -14,7 +15,7 @@ public class MainOpenOption : MonoBehaviour
             camCon.GetComponent<CameraController>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-          
+            cross.SetActive(false);
         }
     }
 }
