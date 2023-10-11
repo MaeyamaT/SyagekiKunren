@@ -585,7 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6026e39766ea72c4282b6ff364c7fa66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MOUSensi: 0
+  sensitivitySlider: {fileID: 0}
+  audioSource: {fileID: 527197860}
 --- !u!82 &527197860
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2130,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321162978173393, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204321163047945505, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_Sprite
@@ -2214,7 +2215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164004384610, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164004384610, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2270,7 +2271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2278,7 +2279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164309609268, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3662598921457475505, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
@@ -2300,4 +2301,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6026e39766ea72c4282b6ff364c7fa66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MOUSensi: 0
+  sensitivitySlider: {fileID: 8204321163552956071}
+  audioSource: {fileID: 0}
+--- !u!114 &8204321163552956071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
+  m_PrefabInstance: {fileID: 8204321163552956067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204321163552956068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MuteSounds : MonoBehaviour
 {
-    public GameObject m;
+    public Button muteButton;
     public AudioSource audioSource;
     
       void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
+        muteButton.onClick.AddListener(MuteSound);
     }
 
-     void OnClickStartButton()
+     void MuteSound()
     {
-        audioSource.volume = 0;
+        audioSource.volume = 0.0f;
     }
 }
