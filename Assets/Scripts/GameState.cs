@@ -9,7 +9,6 @@ public class GameState : MonoBehaviour
     public GameController gameCon;
     public CameraController cameraCon;
     public TargetGenerator targetGen;
-    public GameController gc;
     public GameObject startText;
     float startTime = 3.0f;
     bool flag = false;
