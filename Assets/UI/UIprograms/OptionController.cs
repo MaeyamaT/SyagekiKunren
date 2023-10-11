@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class OptionController : MonoBehaviour
 {
-    public int MOUSensi; 
+    public Slider sensitivitySlider; 
    // public CameraController c;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
+        sensitivitySlider.value=PlayerPrefs.GetFloat("MouseSensitivity",0.5f);
     }
 
     // Update is called once per frame
@@ -17,16 +19,15 @@ public class OptionController : MonoBehaviour
 	{
 		audioSource.volume = newSliderValue;
 	}
-   // void Update()
-//    {}
-
-    /*     Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                c.GetComponent<CameraController>().enabled = true; 
-
- Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                c.GetComponent<CameraController>().enabled = false; 
-    */
+    public void ChangeSensitivity(float value)
+    {
+        PlayerPrefs.SetFloat("MouseSensitivity",value);   
+        PlayerPrefs.Save();
+        UpdateMouseSensitivity(value);
+    }
+    private void UpdateMouseSensitivity(float sensitivity)
+    {
+        Debug.Log("Sensitivity : " + sensitivity);
+    }
     
 }
