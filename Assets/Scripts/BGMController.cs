@@ -19,6 +19,7 @@ public class BGMController : MonoBehaviour
     {
         if (gc.totalTime < 20 && isChenged==false)
         {
+            audioSource.PlayOneShot(clips[2]);
             audioSource.clip=clips[1];
             audioSource.Play();
             isChenged = true;
