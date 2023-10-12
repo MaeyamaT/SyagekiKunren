@@ -9,7 +9,6 @@ public class GameState : MonoBehaviour
     public GameController gameCon;
     public CameraController cameraCon;
     public TargetGenerator targetGen;
-    public GameController gc;
     public GameObject startText;
     float startTime = 3.0f;
     bool flag = false;
@@ -24,6 +23,7 @@ public class GameState : MonoBehaviour
     }
     void Ready()
     {
+        GameController.Score.score=0;
         cameraCon.GetComponent<CameraController>().enabled = false;
         gameCon.GetComponent<GameController>().enabled = false;
         targetGen.GetComponent<TargetGenerator>().enabled = false;

@@ -7,7 +7,7 @@ public class BGMController : MonoBehaviour
 {
     public GameController gc;
     AudioSource audioSource;
-    public AudioClip[] clips;// Start is called before the first frame update
+    public AudioClip[] clips;
     bool isChenged=false;
     void Start()
     {
@@ -19,6 +19,7 @@ public class BGMController : MonoBehaviour
     {
         if (gc.totalTime < 20 && isChenged==false)
         {
+            audioSource.PlayOneShot(clips[2]);
             audioSource.clip=clips[1];
             audioSource.Play();
             isChenged = true;

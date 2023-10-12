@@ -8,9 +8,12 @@ public class TimeStop : MonoBehaviour
 
     void Update()
     {
-        if(o.activeSelf){
-        Time.timeScale = 0f;
-        }else{
+        if (o.activeSelf)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
             Time.timeScale = 1f;
         }
     }
