@@ -23,6 +23,7 @@ public class GameState : MonoBehaviour
     }
     void Ready()
     {
+        GameController.Score.score=0;
         cameraCon.GetComponent<CameraController>().enabled = false;
         gameCon.GetComponent<GameController>().enabled = false;
         targetGen.GetComponent<TargetGenerator>().enabled = false;
