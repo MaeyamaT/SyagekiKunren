@@ -8,10 +8,11 @@ public class GameController : MonoBehaviour
 {
     public CameraController cc;
     public GameState gs;
-    public float totalTime=60.0f;
+    public float totalTime = 60.0f;
     public GameObject resultText;
     public Text scoreText;
-    public int score=0;
+    public int score = 0;
+    public GameObject option;
 
     void Start()
     {
@@ -20,18 +21,24 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = "SCORE:"+score.ToString();
-        totalTime-=Time.deltaTime;
-        if(totalTime < 0)
+        scoreText.text = "SCORE:" + score.ToString();
+        if (option.activeSelf)
         {
-            totalTime = 0;
         }
-        if(totalTime == 0)
+        else
         {
-            resultText.SetActive(true);
-            gs.cross.SetActive(false);
-            cc.GetComponent<CameraController>().enabled = false;
-            Invoke("ChangeScene", 5.0f);
+            totalTime -= Time.deltaTime;
+            if (totalTime < 0)
+            {
+                totalTime = 0;
+            }
+            if (totalTime == 0)
+            {
+                resultText.SetActive(true);
+                gs.cross.SetActive(false);
+                cc.GetComponent<CameraController>().enabled = false;
+                Invoke("ChangeScene", 5.0f);
+            }
         }
     }
     void ChangeScene()
