@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using System.Linq;
+using OpenCover.Framework.Model;
 
 public class GameController : MonoBehaviour
 {
@@ -11,8 +14,11 @@ public class GameController : MonoBehaviour
     public float totalTime = 60.0f;
     public GameObject resultText;
     public Text scoreText;
-    public int score = 0;
     public GameObject option;
+    public class Score
+    {
+        public static int score;
+    }
 
     void Start()
     {
@@ -21,7 +27,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = "SCORE:" + score.ToString();
+        scoreText.text = "SCORE:" + Score.score.ToString();
         if (option.activeSelf)
         {
         }

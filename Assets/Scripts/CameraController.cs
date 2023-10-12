@@ -59,8 +59,8 @@ public class CameraController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100f))
             {
                 Destroy(hit.collider.gameObject);
-                gc.score++;
-                Debug.Log(gc.score);
+                GameController.Score.score++;
+                Debug.Log(GameController.Score.score);
             }
         }
     }
