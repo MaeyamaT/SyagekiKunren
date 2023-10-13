@@ -894,6 +894,7 @@ MonoBehaviour:
   cameraCon: {fileID: 963194232}
   targetGen: {fileID: 92548231}
   startText: {fileID: 757345662}
+  option: {fileID: 1892797921}
   timer: {fileID: 1901504200}
   stt: {fileID: 125397345}
   cross: {fileID: 50980718}
@@ -1744,7 +1745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click To Start!
+  m_Text: Press Enter To Start!
 --- !u!222 &757345664
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class GameState : MonoBehaviour
     public GameObject startText;
     float startTime = 3.0f;
     bool flag = false;
+    public GameObject option;
     public GameObject timer;
     public GameObject stt;
     public GameObject cross;
@@ -40,8 +41,8 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Return))
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Return))
+        //if (Input.GetMouseButtonDown(0) && option.activeSelf==false)
         {
             startText.SetActive(false);
             stt.SetActive(true);
