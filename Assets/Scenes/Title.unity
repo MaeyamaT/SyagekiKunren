@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6026e39766ea72c4282b6ff364c7fa66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 527197860}
 --- !u!82 &527197860
 AudioSource:
   m_ObjectHideFlags: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EXIT
+  m_Text: BACK TO TITLE
 --- !u!222 &727595917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1350,19 +1350,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1494742726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494742721}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3a1ac53a5323544caed0a8fae3268e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  o: {fileID: 1581498226}
 --- !u!224 &1520422343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6079977887440007828, guid: 0a3665c098dae594cb5c054bd4a4a124, type: 3}
@@ -1983,7 +1970,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8204321162531188508, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8204321162531188508, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_MaxValue
@@ -2247,7 +2234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2256,18 +2243,18 @@ PrefabInstance:
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8204321163552956071}
+      objectReference: {fileID: 8204321163552956073}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetValueWithoutNotify
+      value: ChangeSensitivity
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.UI.Slider, UnityEngine.UI
+      value: SensiChange, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2316,4 +2303,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a4f79bc0e378a4f87f35619dcfecb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivitySlider: {fileID: 0}
+  sensitivitySlider: {fileID: 8204321163552956071}
