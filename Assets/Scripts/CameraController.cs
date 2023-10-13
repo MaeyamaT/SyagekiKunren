@@ -10,7 +10,8 @@ public class CameraController : MonoBehaviour
     Vector3 primaryAngle;
     float yLimit = 40f;
     float xLimit = 25f;
-    public float sensitivity = 1;
+    //static を足しました
+    public static float sensitivity = 1;
     AudioSource audioSource;
 
 
