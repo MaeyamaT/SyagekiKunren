@@ -18,6 +18,7 @@ public class ScoreRanking : MonoBehaviour
         {
             rankingText[i].text = ranking[i].ToString();
         }
+        GameController.Score.score=0;
 
     
     }

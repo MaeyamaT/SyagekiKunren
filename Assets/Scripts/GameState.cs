@@ -23,7 +23,6 @@ public class GameState : MonoBehaviour
     }
     void Ready()
     {
-        GameController.Score.score=0;
         cameraCon.GetComponent<CameraController>().enabled = false;
         gameCon.GetComponent<GameController>().enabled = false;
         targetGen.GetComponent<TargetGenerator>().enabled = false;
@@ -41,7 +40,8 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        //if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetMouseButtonDown(0))
         {
             startText.SetActive(false);
             stt.SetActive(true);
@@ -55,7 +55,7 @@ public class GameState : MonoBehaviour
             {
                 startTime = 0;
             }
-            startTimer.text = "開始まで" + startTime.ToString("f1");
+            startTimer.text = "READY..." + startTime.ToString("f1");
         }
     }
 }
