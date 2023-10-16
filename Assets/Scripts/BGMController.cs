@@ -25,7 +25,7 @@ public class BGMController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gc.totalTime < 20 && isChenged==false)
+        if (gc.totalTime < 20 && isChenged==false && gameObject.name=="BGMController")
         {
             audioSource.PlayOneShot(clips[2]);
             audioSource.clip=clips[1];

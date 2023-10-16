@@ -3331,7 +3331,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gc: {fileID: 676794271}
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: d2812a04f5bb153499cbec4e70e6e542, type: 3}
+  - {fileID: 8300000, guid: 27f512e6e6a2be44eba408c9b1328ca8, type: 3}
+  - {fileID: 8300000, guid: 2a91c4ca10c3a7f49a9eb1548682b00a, type: 3}
   volumeSlider: {fileID: 8121576280235476498}
 --- !u!1 &8121576280235476497 stripped
 GameObject:
