@@ -9,14 +9,13 @@ public class SensiChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         sensitivitySlider.value=PlayerPrefs.GetFloat("MouseSensitivity",0.5f);
+        CameraController.sensitivity = 1.0f * sensitivitySlider.value;
     }
-     public void ChangeSensitivity(float value)
-    {
-        PlayerPrefs.SetFloat("MouseSensitivity",value);   
-        PlayerPrefs.Save();
-        UpdateMouseSensitivity(value);
-    }
+     void Update()
+     {
+        CameraController.sensitivity = 1.0f * sensitivitySlider.value;
+        
+     }
     private void UpdateMouseSensitivity(float sensitivity)
     {
         Debug.Log("Sensitivity : " + sensitivity);

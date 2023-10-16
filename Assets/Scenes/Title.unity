@@ -2491,14 +2491,14 @@ PrefabInstance:
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8204321163552956069}
+      objectReference: {fileID: 8204321163552956068}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SoundSliderOnValueChange
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2528,7 +2528,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8204321164293771545, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
   m_PrefabInstance: {fileID: 8204321163552956067}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8204321163552956069
+--- !u!114 &8204321163552956071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8204321164293771551, guid: b63ed755cea893046a1d9fccf446d13a, type: 3}
+  m_PrefabInstance: {fileID: 8204321163552956067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204321163552956068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8204321163552956072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2537,10 +2548,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8204321163552956068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6026e39766ea72c4282b6ff364c7fa66, type: 3}
+  m_Script: {fileID: 11500000, guid: 20a4f79bc0e378a4f87f35619dcfecb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  sensitivitySlider: {fileID: 8204321163552956071}
 --- !u!1001 &8386559870879762015
 PrefabInstance:
   m_ObjectHideFlags: 0
