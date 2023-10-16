@@ -19,7 +19,7 @@ public class BGMController : MonoBehaviour
         //Sliderと連動させる処理
         audioSlider = gameObject.GetComponent<AudioSource>();
            //Titleと同じ音量にする処理 
-       volumeSlider.value = OptionController.PubVolume.pubVolume;
+        volumeSlider.value = OptionController.PubVolume.pubVolume;
     }
 
     // Update is called once per frame

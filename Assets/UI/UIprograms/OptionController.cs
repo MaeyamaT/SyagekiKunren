@@ -20,7 +20,7 @@ public class OptionController : MonoBehaviour
     
     public class PubVolume
     {
-        public static float pubVolume;
+        public static float pubVolume = 1f;
     }
    
     
