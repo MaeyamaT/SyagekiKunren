@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.16420089, g: 0.426082, b: 0.68541443, a: 1}
+  m_IndirectSpecularColor: {r: 0.11267945, g: 0.2814679, b: 0.70868134, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -850,6 +850,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
       propertyPath: m_Name
       value: SandMountain_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
@@ -1857,6 +1861,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
       propertyPath: m_Name
       value: SandMountain_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a9b238dfe386643bc957d2e442a8ee, type: 3}
