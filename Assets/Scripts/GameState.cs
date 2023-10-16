@@ -10,6 +10,8 @@ public class GameState : MonoBehaviour
     public CameraController cameraCon;
     public TargetGenerator targetGen;
     public GameObject startText;
+
+    public GameObject InstructionsImage;
     float startTime = 3.0f;
     bool flag = false;
     public GameObject option;
@@ -45,6 +47,7 @@ public class GameState : MonoBehaviour
         //if (Input.GetMouseButtonDown(0) && option.activeSelf==false)
         {
             startText.SetActive(false);
+            InstructionsImage.SetActive(false);
             stt.SetActive(true);
             flag = true;
             Invoke("GameStart", startTime);
